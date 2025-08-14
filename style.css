@@ -80,3 +80,98 @@ h2, h3 {
     margin: 0px;
     font-family:'Times New Roman', Times, serif;
 }
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #eee;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
+}
+💡 Why Add CSS?
+CSS makes your site look polished by controlling colors, layouts, and fonts. Styling helps create a better user experience.
+
+✅ Check Your Work!
+Preview your site using Live Server to ensure the new styles are applied.
+
+
+
+
+Extra CSS Challenges
+Here's some other things to try:
+
+Google "CSS border radius" and add a border-radius property to the nav selector to give the <nav> element rounded corners
+Add a border around the image in your home page
+Change the background color
+Add a favicon to your index.html and portfolio.html files. Favicons are cool ways to customize your page!
+Learn more about favicons here
+Make your website mobile responsive.
+
+Here's some CSS to get you started on making your website mobile responsive. You can add this code to the bottom of your CSS file.
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 42px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    width: 100%;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
+}
