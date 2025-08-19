@@ -5,7 +5,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 #all-contents {
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -48,17 +48,17 @@ a {
 main {
     background: rgb(81, 173, 130);
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
     border: 5px rgb(10, 105, 67) ridge;
 }
 
 .sidebar {
-    margin-right: 25px;
+    margin-right: 15px;
     padding: 10px;
 }
 
 .sidebar-img {
-    width: 350px;
+    width: 300px;
     border: 5px rgb(10, 105, 67) ridge;
 }
 
