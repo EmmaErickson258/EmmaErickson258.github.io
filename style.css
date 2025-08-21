@@ -110,3 +110,22 @@ h2, h3 {
   text-decoration: none;
   color: #121212;
 }
+
+.subimg {
+    float: center;
+    width: 500px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border: 5px rgb(10, 105, 67) ridge;
+}
+
+.fancontent {
+    float:center;
+    padding: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.h2 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
