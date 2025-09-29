@@ -30,9 +30,9 @@ var runLevels = function (window) {
       obstacleImage.x = -25
       obstacleImage.y = -25
   }
-    createSawBlade(1000, 165)
-    createSawBlade(400, 165)
-    createSawBlade(600, 250)
+    createSawBlade(600, 165)
+    createSawBlade(1200, 250)
+    createSawBlade(1800, 170)
 
 function createEnemy(x, y) {
     var enemy = game.createGameItem("enemy", 25);
@@ -52,12 +52,12 @@ function createEnemy(x, y) {
 
     enemy.onProjectileCollision= function() {
       game.increaseScore(100);
-      enemy.fadeOut();
+      enemy.shrink();
     }
   }
-  createEnemy(400, groundY - 10);
-createEnemy(800, groundY - 100);
-createEnemy(1200, groundY - 50);
+  createEnemy(1500, groundY - 250);
+createEnemy(1900, groundY - 200);
+createEnemy(2800, groundY - 255);
 
 function createReward(x, y) {
  
