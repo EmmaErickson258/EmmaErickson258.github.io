@@ -34,11 +34,11 @@
         hud = new createjs.Container();
         
         integrity = new createjs.Container();
-        background = draw.rect(104, 20, '#1b7a26ff');
-        draw.rect(102, 18, '#256e38ff', null, null, 1, 1, background);
+        background = draw.rect(104, 20, '#49b856ff');
+        draw.rect(104, 20, '#3abb5cff', null, null, 1, 1, background);
         integrity.addChild(background);
         
-        txtScore = draw.textfield('score : 000', "19px Arial", '#237358ff', 'left');
+        txtScore = draw.textfield('score : 000', "19px Arial", '#49b856ff', 'left');
         hud.addChild(txtScore);
         
         integrityMeter = draw.rect(1, 16, '#267a46ff');
