@@ -60,8 +60,30 @@ createEnemy(1900, groundY - 200);
 createEnemy(2800, groundY - 255);
 
 function createReward(x, y) {
+   var reward = game.createGameItem("reward", 25);
+    var yellowSquare = draw.rect(50, 50, "yellow");
+      yellowSquare.x = -25;
+      yellowSquare.y = -25;
+      reward.addChild(yellowSquare);
+        reward.x = x;
+        reward.y = groundY - y;
+        game.addGameItem(reward);
+        reward.velocityX = -3;
+        reward.rotationalVelocity = -2;
+
+    reward.onPlayerCollision= function () {
+      game.changeIntegrity(100);
+      reward.shrink()
+    }
+
+    reward.onProjectileCollision= function() {
+      reward.flyTo(x,y);
+    }
+  }
+  createReward(1100, groundY - 150);
+createReward(1700, groundY - 100);
+createReward(2300, groundY - 155);
  
-}
     function startLevel() {
       // TODO 13 goes below here
 
